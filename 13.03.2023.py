@@ -1,15 +1,17 @@
 import ru_local as ru
 
-ptrl_g = float(input())  # Petrol input (in gallons).
-ptrl_l = ptrl_g * 3.785  # Petrum volume(litres).
-oil_b = ptrl_g/19.5  # The amount of burrels of oil to produse gasoline.
-co2 = ptrl_g * 20  # Volume of carbon dioxide burning in the engine of this gasoline.
-enrgy_ptrl_g = ptrl_g * 115000  # Gasoline energy.
-ethnl_g = enrgy_ptrl_g/75700  # Equivalent volume of ethanol (in gallons).
-cost = ptrl_g * 3  # Gasoline cost (USD).
-V = 0.766  # The number of litres of gasoline that Russians spend per day on average.
-V_nsk = V * 1576000  # Approximate gas consumption (in liters) for Novosibirsk.
-V_rus = V * 146424729 * 365  # Approximate gasoline consumption (in liters) for Russia.
+ptrl_g = float(input())                 # Petrol input (in gallons).
+
+ptrl_l = ptrl_g * 3.785                 # Petrol volume(litres).
+oil_b = ptrl_g / 19.5                   # The amount of burrels of oil to produse gasoline.
+co2 = ptrl_g * 20                       # Volume of carbon dioxide burning in the engine of this gasoline.
+enrgy_ptrl_g = ptrl_g * 115_000         # Gasoline energy.
+ethnl_g = enrgy_ptrl_g / 75_700         # Equivalent volume of ethanol (in gallons).
+cost = ptrl_g * 3                       # Gasoline cost (USD).
+
+V = 0.766                               # The number of litres of gasoline that Russians spend per day on average.
+V_nsk = V * 1_576_000                   # Approximate gasoline consumption (in liters) for Novosibirsk.
+V_rus = V * 146_424_729 * 365           # Approximate gasoline consumption (in liters) for Russia.
 
 print(ru.PTRL_G, ptrl_g)
 print(ru.PTRL_L, ptrl_l)
